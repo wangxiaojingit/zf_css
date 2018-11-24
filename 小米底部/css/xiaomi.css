@@ -1,0 +1,93 @@
+.footer{
+    color:#616161;
+}
+a{
+    color:#616161;
+}
+.main{
+    width:1226px;
+    height:272px;
+    margin:0 auto;
+}
+.top{
+    height:80px;
+    padding:23px 0;
+    border-bottom:1px solid #e0e0e0;
+    box-sizing: border-box;
+
+}
+.top li{
+    width:19%;
+    border-right:1px solid #eee;
+    height:25px;
+    line-height: 25px;
+    float:left;
+    text-align: center;
+    font-size:16px;
+}
+.top li a{
+    display: inline-block;
+}
+.top li a:hover{
+    color:#ff6700;
+}
+.top .icon{
+  font-size:24px;
+  vertical-align: -2px;
+}
+.top li:nth-last-child(1){
+    border-right:none;
+}
+.bottom{
+    height:112px;
+    padding:40px 0;
+}
+
+dl{
+    width:160px;
+    float:left;
+}
+dl dt{
+   color: #424242;
+    margin-bottom:26px;
+    font-size:14px;
+}
+
+dl dd{
+   color: #757575;
+    font-size:12px;
+    margin-top:10px;
+}
+.telphone{
+    width:252px;
+    height:112px;
+    float:right;
+    border-left:1px solid #e0e0e0;
+}
+.telphone p{
+    text-align:center;
+}
+.gold{
+    color:#ff6700;
+    font-size:22px;
+}
+.time{
+    font-size:12px;
+    margin-bottom:16px;
+}
+.telphone a{
+    display: block;
+    width:120px;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    margin:0 auto;
+    border:1px solid #ff6700;
+    color:#ff6700;
+}
+.telphone a:hover{
+    color:#fff;
+    background:#ff6700;
+}
+
+
