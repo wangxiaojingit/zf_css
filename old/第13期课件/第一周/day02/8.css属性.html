@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css常用的属性</title>
+    <style type="text/css">
+        div{
+            font-size: 40px; /*ctrl + shift + / 注释  字体大小: 像素px*/
+            color: #ff1d39; /* 字体颜色*/
+            font-weight: bold;/*把字体加粗*/
+        }
+        span{
+            display: inline-block; /*span属性行内元素，行内元素设置宽高不起作用，所有我们需要通过display:inline-block/block转换一下*/
+            width:50px;
+            height:50px;
+            background-color: green; /*背景颜色*/
+        }
+        li{list-style: none;}
+        a{text-decoration: none;}
+        /*  元素对象:hover 鼠标事件 */
+        a:hover{
+            text-decoration: underline;
+            color:red
+        }
+    </style>
+</head>
+<body>
+
+<div>珠峰故事</div>
+<span>1</span>
+<span>10</span>
+<a href="#">京东京东京东</a>
+
+<ol>
+    <li>珠峰故事珠峰故事珠峰故事珠峰故事珠峰故事</li>
+</ol>
+
+<ul>
+    <li>珠峰故事珠峰故事珠峰故事珠峰故事珠峰故事</li>
+</ul>
+</body>
+</html>

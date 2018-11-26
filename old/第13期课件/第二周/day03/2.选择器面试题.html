@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>珠峰培训</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="shortcut icon" href="" type="image/x-icon"/>
+    <link rel="icon" href="" type="image/x-icon"/>
+    <style>
+        /* 综合面试题: css 选择器 + 权重 +  优先级*/
+        body{color:green;}
+        #shop .favorite:not(#shop) .highlight{color:red;} /*red*/
+        #shop .highlight:nth-of-type(1):nth-last-of-type(1){color:blue !important;}
+
+
+        /*
+        :not
+        :nth-of-type(1)
+        :nth-last-of-type(1)
+        */
+    </style>
+</head>
+<body>
+<!--请给出【Sausage】的字体颜色值-->
+<ul class='shopping-list' id='shop'>
+    <li><span>Milk</span></li>
+    <li class='favorite' id='must-buy'>
+        <span class='highlight'>Sausage</span>
+    </li>
+</ul>
+
+
+
+</body>
+</html>

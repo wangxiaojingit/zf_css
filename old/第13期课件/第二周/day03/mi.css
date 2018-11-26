@@ -1,0 +1,35 @@
+.red{background-color: red}
+.green{background-color: green}
+body{background-color: #f5f5f5}
+.column{width:1226px;margin:0 auto;overflow: hidden}
+.hd{height: 58px;line-height: 58px;color:#333;}
+.hd h2{float: left;font-size: 22px;font-weight: 200}
+.hd ul{float:right;font-size:16px;font-weight: 400}
+.hd ul li{float: left;margin-left:30px;cursor: pointer}
+.hd ul li:hover{color:orange}
+.bd li{width:234px;height:300px;margin-bottom:14px;background-color: #fff;transition: all .2s linear}
+.bd li:hover{transform: translateY(-2px);box-shadow: 0 15px 30px rgba(0,0,0,0.1)}
+.bd li:hover .layer-hover{bottom:0;}
+.bd .left{float: left;width:234px;}
+.bd .left img{width: 100%}
+.bd .right{float: left;width:992px;}
+.bd .right li{position:relative;float:left;margin-left:14px;text-align: center;overflow: hidden}
+.bd .right img{width: 160px;height: 160px;}
+.bd .right h3{font-size:14px;font-weight: 400;color:#333}
+.bd .right .des{line-height:20px;font-size: 12px;color:#b0b0b0;padding:0 10px 10px 10px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis}
+.bd .right .price{font-size:14px;font-weight: 400;color:#b0b0b0;padding:0 10px 14px 10px}
+.bd .price span{color:#ff6700}
+.bd .right .label{position:absolute;top:0;left:50%;margin-left:-32px;display:block;width: 64px;height: 20px;line-height: 20px;text-align: center;color:#fff;}
+.bd .right .layer-hover{position:absolute;bottom:-115px;width: 234px;height:115px;background-color: orange;transition: all 1s ease}
+.bd .right .last{width:214px;height: 93px;text-align: left;padding:50px 10px 0 10px}
+.bd .right .last img{float: right;width:80px;height: 80px;margin-top:-20px;}
+.bd .left .bigPic{height:614px;}
+
+/* 默认display:block   鼠标移上 display:none */
+
+
+
+
+
+
+

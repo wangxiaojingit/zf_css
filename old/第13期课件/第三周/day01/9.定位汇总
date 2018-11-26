@@ -1,0 +1,13 @@
+position:absolute  绝对定位
++ 会脱离文档流，导致后面的元素往前跑
++ 参照物: 如果父元素没有设置参照物会往上找到body
+          如果父元素设置，参照物就是父元素 position:relative
+
+position:relative 相对定位 (主要用来作绝对定位的参照物、设置方位)
++ 不会脱离文档流，会占位置
++ 参照物: 自己原本的位置
+
+position:fixed 固定定位
++ 会脱离文档流
++ 参照物: 整个浏览器窗口  top/bottom/left/right
+

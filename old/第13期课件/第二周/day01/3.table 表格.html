@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>珠峰培训</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="shortcut icon" href="" type="image/x-icon"/>
+    <style type="text/css">
+      /* 去掉table默认的间隙*/
+      table{border-collapse: collapse}
+      tr,td{margin: 0;padding:0;}
+    </style>
+</head>
+<body>
+<!-- table 表格  border="1" 表格的边框线 cellpadding 表格间距 cellspacing 表格列与列之间的间距 -->
+
+<table border="1" cellpadding="10">
+    <!-- caption 表格的标题 -->
+    <caption>学生信息登记</caption>
+    <!-- tr表格的行 -->
+    <tr>
+        <!-- td 表格行里的每个小列 th 表格的标题 加粗-->
+        <th>姓名</th>
+        <th>姓别</th>
+        <th>年龄</th>
+    </tr>
+    <tr align="center">
+        <td>程浩杰</td>
+        <td>女</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>张昊</td>
+        <td>男</td>
+        <td>81</td>
+    </tr>
+</table>
+<hr>
+
+<!-- colspan 合并列 th 加粗居中-->
+<table border="1">
+    <tr bgcolor="#ff8c00">
+        <th>姓名</th>
+        <th colspan="2">电话号码</th>
+    </tr>
+    <tr>
+        <td>张三</td>
+        <td>北京号:12345678910</td>
+        <td>河北号:9876543210</td>
+    </tr>
+</table>
+
+<hr>
+<!-- 合并行 rowspan  -->
+<table border="1">
+    <tr>
+        <th>姓名</th>
+        <td>陈浩杰</td>
+    </tr>
+    <tr>
+        <th rowspan="2">电话号码</th>
+        <td>北京号码:12345678910</td>
+    </tr>
+    <tr>
+        <td>河北号码:12345678910</td>
+    </tr>
+</table>
+</body>
+</html>

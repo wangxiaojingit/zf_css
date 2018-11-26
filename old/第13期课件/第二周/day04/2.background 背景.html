@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>珠峰培训</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="shortcut icon" href="" type="image/x-icon"/>
+    <link rel="icon" href="" type="image/x-icon"/>
+    <style type="text/css">
+        /* 背景类八大属性
+        background-color 背景颜色
+        background-image:url("") 背景图片
+        background-repeat 默认值repeat平铺  no-repeat不平铺  repeat-x 、repeat-y
+        background-attachment 背景随着滚动条的滚动而滚动还是固定scroll 滚动   fixed 固定
+        background-position：x轴的坐标  y轴的坐标  背景位置 方位、像素、百分比  居中: center  center / 50%  50%
+
+       上面的五个属性属于css的属性，可以合并成一个复合属性(缩写)
+       background:red  url(pic.jpg) no-repeat fixed  center center
+       合并的时候，每个属性值之间用一个空格隔开
+        */
+        .box{width:200px;height:200px;background-color: red}
+        .box1{width:500px;height:500px;background-image: url("https://webinput.nie.netease.com/img/xyq/logo.png/200");background-attachment: fixed}
+        .box2{
+            width:500px;
+            height:500px;
+            background-color:darkcyan;
+            background-image: url("https://webinput.nie.netease.com/img/xyq/logo.png/200");
+            background-repeat: no-repeat;
+            background-position:50% 50% ;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>

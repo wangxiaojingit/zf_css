@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>珠峰培训</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon"/>
+    <link rel="icon" href="" type="image/x-icon"/>
+    <style type="text/css">
+        /*设计稿尺寸   iphone5   iphone6   iphone6P
+        640            320        375        414        600
+        100            50        58.59       64.6875    ？？
+
+         HTML根元素的字体大小  =  100 *  (设备的分辨率(窗口大小) / 设计稿的尺寸)
+         窗口大小 = document.documentElement.clientWidth ||  document.body.clientWidth
+         ？ =  100 *  (窗口大小 / 640 ）
+        */
+
+        html{font-size: 100px;} /* 1rem = 100px*/
+        .box{width:2rem;height:2rem;background-color: darkblue}
+        .box1{width:2rem;height:2rem;background-color: #ff3478}
+        /* 响应式单位 rem:root element（html） of font size
+        指的是根元素html的字体大小,默认值为16px 1rem = 16px
+        为了方便计算，减少误差(字体最小12px)，我们给html的fontsize值设置为100px    1rem = 100px
+        */
+        @media screen and (min-width: 320px) {
+            html{font-size:50px }
+        }
+        @media screen and (min-width:375px) {
+            html{font-size:58.59px }
+        }
+        @media screen and (min-width:414px) {
+            html{font-size:64.6875px }
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<div class="box1"></div>
+<script type="text/javascript">
+    function refreshRem() {
+        var desW = 640,
+            winW = document.documentElement.clientWidth,
+            ratio = winW / desW;
+        document.documentElement.style.fontSize = ratio * 100 + 'px';
+    }
+    refreshRem();
+    window.addEventListener('resize', refreshRem);
+</script>
+</body>
+</html>

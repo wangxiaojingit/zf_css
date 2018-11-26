@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>珠峰培训</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="shortcut icon" href="" type="image/x-icon"/>
+    <link rel="icon" href="" type="image/x-icon"/>
+</head>
+<body>
+<!-- input表单元素常用的type类型(23种)
+type="text"  文本类型 : 用户名，手机号
+type="password"  密码类型
+type="submit"  提交按钮
+type="reset" 重置按钮
+type="button" 点击按钮
+type="checkbox" 多选按钮
+type="radio" 单选按钮  name = ""  进行归类，只能有一个被选中
+type="file"  文件类型
+-->
+<!-- placeholder 占位符，当用户填入内容之后，占位符的内容就会被覆盖
+     autofocus 获取光标
+     value = "" 获取值
+-->
+<form action="">
+    <input type="text" placeholder="请输入用户名" autofocus>
+    <input type="text" required>
+    <input type="password">
+    <input type="submit">
+    <input type="reset">
+    <input type="button" value="获取短信验证码">
+    <input type="checkbox"> 打球
+    <input type="checkbox"> 看书
+    <input type="checkbox"> 敲代码
+    <!-- label中for指向input标签中的id，点击文字内容也可以选中和取消input的按钮-->
+    <input type="checkbox" id="agree"> <label for="agree">请阅读百度用户协议</label>
+    <input type="radio" name="sex"> 女
+    <input type="radio" name="sex"> 男
+    <input type="radio" name="sex"> 人妖
+    <input type="file">
+</form>
+
+<!-- 下拉选框 -->
+<select>
+    <option value="">年</option>
+    <option value="">2018</option>
+    <option value="">2019</option>
+</select>
+<select>
+    <option value="">月</option>
+    <option value="">12</option>
+    <option value="">11</option>
+</select>
+<select>
+    <option value="">日</option>
+    <option value="">5</option>
+    <option value="">6</option>
+</select>
+
+<!-- 多行文本 cols = "列数" rows = "行数"-->
+<textarea name="" id="" cols="" rows=""></textarea>
+</body>
+</html>

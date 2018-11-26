@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        /* 块级元素水平居中 width 宽度  +  margin: 上下  auto
+         background-image:url("图片的路径地址")  背景图片
+        background-color:背景颜色
+        margin-top 传递问题(子元素设置margin-top,子元素不但没有跟父元素分离，而且传递给父元素上了，让父元素整体下移了)
+        解决margin-top的传递问题： 给父元素加属性overflow:hidden
+        */
+        *{margin: 0;padding:0;}
+        body{background-image: url("timg.jpg")}
+        .main{width:830px;height:476px;margin:50px auto;background-color: white;overflow:hidden}
+        .main .title{height: 45px;margin:5px 10px 5px 10px;background-color: red}
+        .main .list{height: 420px;background-color: darkmagenta;margin: 0 10px 0 10px;}
+    </style>
+</head>
+<body>
+
+<!-- 主体 main content column -->
+<div class="main">
+    <div class="title"></div>
+    <div class="list"></div>
+</div>
+
+
+
+</body>
+</html>

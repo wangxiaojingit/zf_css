@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        /*去掉标签默认自带的样式 reset.css*/
+        *{margin: 0;padding: 0} /*去掉浏览器默认自带的间距 谷歌:body{margin:8px;}*/
+        li{list-style: none}/*去掉li默认自动的样式: 小黑点或者数字*/
+        a{text-decoration: none} /*去掉a默认自带的下划线*/
+        em{font-style: normal} /*斜体变成正常字体*/
+
+        .main{width:830px;height: 476px;margin:50px auto;background-color: cornsilk}
+        .main li{height: 30px;line-height: 30px;}
+        .main li span{display:inline-block;width:15px;height:15px;background-color: #ff1d39;font-size: 12px;color:white;text-align: center;line-height: 15px;vertical-align:middle}
+        .main li a{display:inline-block;width:783px;font-size: 12px;color:#555;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;vertical-align:middle}
+        .main li a:hover{background-color: darkorange}
+        /* 行内块元素对齐的方式: vertical-align 基线对齐*/
+    </style>
+</head>
+<body>
+<ol class="main">
+    <li>
+        <span>1</span>
+        <a href="#"><em>珠峰就业</em>岁末，珠峰就业还在一直创造奇迹岁末岁末，珠峰就业还在一直创造奇迹岁末岁末，珠峰就业还在一直创造奇迹岁末岁末，珠峰就业还在一直创造奇迹岁末</a>
+    </li>
+    <li>
+        <span>10</span>
+        <a href="#"><em>珠峰就业</em>岁末，珠峰就业还在一直创造奇迹岁末</a>
+    </li>
+</ol>
+</body>
+</html>

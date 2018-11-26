@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文字内容水平垂直居中</title>
+    <style type="text/css">
+        /*span行内元素:
+        宽高是本身内容的大小
+        行元素设置宽高不起作用，所以需要转换为块级或者行内快元素
+        display:block   独占一行
+        display:inline-block  不独占一行
+        */
+        span{display:block;width:15px;height:15px;margin:10px;background-color: #00a67c;font-size: 12px;color:#fff;
+        text-align: center;/* 文字内容水平居中*/
+        line-height:15px;/* 文字内容垂直居中:行高 = 高度*/  }
+        p{width: 300px;height: 50px;line-height:50px;background-color: darkgoldenrod;text-align: center}
+    </style>
+</head>
+<body>
+<span>1</span>
+<span>10</span>
+<p>珠峰培训</p>
+</body>
+</html>

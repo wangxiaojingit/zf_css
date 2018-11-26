@@ -1,0 +1,64 @@
+/*.west{width:100%;height:100%;}
+html{width:100%;height:100%;}
+body{width:100%;height:100%;}*/
+
+html,body,.west{width:100%;height:100%;}
+body{background: url("../images/ft_e43a6db.webp") no-repeat center center;background-size:cover;overflow: hidden}
+.west{width:780px;margin:320px auto}
+.west>div{float: left}
+/* 第二步: 通过animation动画下面规定好的动画名称
+animation:west01 .3s steps(8) infinite 无限次
+动画的名称   动画持续的时间  动画运动的曲线   动画运动的次数
+*/
+.west01{width: 200px;height: 180px;background: url("../images/west_01_3ca39fe.png") no-repeat;animation:west01 .3s steps(8) infinite}
+.west02{width:200px;height: 180px;background: url("../images/west_02_47bad19.png") no-repeat;animation:west02 .3s steps(8) infinite}
+.west03{width:170px;height:240px;background: url("../images/west_03_f962447.png") no-repeat;animation:west03 .3s steps(8) infinite}
+.west04{width: 210px;height: 200px;background: url("../images/west_04_6516d80.png") no-repeat;animation:west04 .3s steps(8) infinite}
+/* 浏览器默认自带的样式: audio:not([controls]) {display: none !important;}*/
+audio{display: block!important}
+/*实现动画第一步:通过@keyframs关键帧规定好动画的名称
+开始帧: 0%  =  from
+50%
+60%
+...
+结束帧  100% = to
+*/
+/* CSS3新增的属性一般需要写两套最少，一套带前缀，一套不带前缀
+-webkit-  兼容webkit内核的浏览器 - 谷歌浏览器
+*/
+@-webkit-keyframes west01 {
+    0%{background-position: 0 0}
+    100%{background-position: -1600px 0}
+}
+@keyframes west01 {
+    0%{background-position: 0 0}
+    100%{background-position: -1600px 0}
+}
+
+@-webkit-keyframes west02 {
+     0%{background-position: 0 0}
+     100%{background-position: -1600px 0}
+ }
+@keyframes west02 {
+    0%{background-position: 0 0}
+    100%{background-position: -1600px 0}
+}
+
+@-webkit-keyframes west03 {
+    0%{background-position: 0 0}
+    100%{background-position: -1360px 0}
+}
+@keyframes west03 {
+    0%{background-position: 0 0}
+    100%{background-position: -1360px 0}
+}
+
+@-webkit-keyframes west04{
+    0%{background-position: 0 0}
+    100%{background-position: -1680px 0}
+}
+@keyframes west04{
+    0%{background-position: 0 0}
+    100%{background-position: -1680px 0}
+}
+

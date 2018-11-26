@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>珠峰培训</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="shortcut icon" href="" type="image/x-icon"/>
+    <link rel="icon" href="" type="image/x-icon"/>
+    <style type="text/css">
+        *{margin: 0;padding: 0} /*去掉浏览器自带的间距*/
+        a{text-decoration: none} /* 去掉a默认自带的下划线*/
+
+        .formBox{width:435px;margin:50px auto;}
+        .formBox p{margin-bottom: 15px}
+        .formBox p .labelTxt{display:inline-block;width:65px;margin-right:10px;text-align: right;font-size: 14px;color:#666;font-weight: 700}
+        .formBox p .ipt{width:328px;height: 16px;padding:11px 10px;border:1px solid #ddd}
+        .formBox p .ipt01{width: 156px;height: 16px;padding:11px 10px;border:1px solid #ddd}
+        .formBox p .ipt02{width: 158px;height: 40px;border: 1px solid #ddd;background-color: #f7f7f7;margin-left:10px;}
+        .formBox p .isAgree{font-size:12px;color:#666;display: inline-block;vertical-align: 2px}
+        .formBox p .ipt03{width:350px;height: 50px;background-color:#3f89ec;border:0;border-radius: 3px;font-size: 16px;color:#fff;font-weight: 700}
+    </style>
+</head>
+<body>
+<!-- 百度注册 -->
+<form action="" class="formBox">
+    <p>
+        <label class="labelTxt">用户名</label>
+        <input class="ipt" type="text" placeholder="请设置用户名">
+    </p>
+    <p>
+        <label class="labelTxt">手机号</label>
+        <input class="ipt" type="text" placeholder="可用户登录和找回密码">
+    </p>
+    <p>
+        <label class="labelTxt">密码</label>
+        <input class="ipt" type="text" placeholder="可用户登录和找回密码">
+    </p>
+    <p>
+        <label class="labelTxt">验证码</label>
+        <input class="ipt01" type="text" placeholder="请输入验证码">
+        <input class="ipt02" type="button" value="获取短信验证码">
+    </p>
+    <p>
+        <label class="labelTxt"></label>
+        <input type="checkbox" id="agree">
+        <label class="isAgree" for="agree">阅读并接受 <a href="#">《百度用户协议》</a>及 <a href="#">《百度隐私权保护声明》</a></label>
+    </p>
+    <p>
+        <label class="labelTxt"></label>
+        <input type="submit" class="ipt03" value="注册">
+    </p>
+</form>
+
+</body>
+</html>

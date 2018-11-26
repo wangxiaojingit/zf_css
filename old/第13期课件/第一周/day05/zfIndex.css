@@ -1,0 +1,104 @@
+/* 去掉浏览器默认自带的样式*/
+*{margin:0;padding:0;}
+li{list-style: none}
+em{font-style: normal}
+a{text-decoration: none}
+
+body{background-color: #dddddd}
+/* header */
+.header{width:1200px;height: 76px;margin:0 auto;background-color: #fff}
+/* nav 背景默认平铺*/
+.nav{width:100%;height:42px;background-image: url("http://www.zhufengpeixun.cn/skin/20142/img/navbj.png");}
+/* banner*/
+.banner{width: 1200px;margin:20px  auto;}
+.banner img{width: 100%}
+/* main 浮动产生的影响: 子元素浮动会导致父元素高度为0
+解决办法: 给父元素加属性overflow:hiden 清除浮动
+*/
+.main{width: 1200px;margin: auto;background-color: rgba(255, 242, 87, 0.23);overflow: hidden}
+.main .left{float:left;width:830px}
+.left .column01{height: 384px;margin-bottom:10px;background-color: #fff}
+.left .column02{height: 99px;margin-bottom:10px;background-color: #fff
+}
+.left .column03{height: 55px;margin-bottom:10px;background-color: #fff
+}
+.left .column04{height: 484px;margin-bottom:10px;background-color: #fff
+}
+.left .column05{height: 767px;margin-bottom:10px;background-color: #fff
+}
+
+/*珠峰故事*/
+.column {
+    width: 830px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.title{
+    height: 45px;
+    line-height:45px;
+    border-bottom: 1px solid #00a67c;
+    margin:5px 10px 5px 10px;
+    font-size: 18px;
+    color:#555;
+}
+.title a{
+    float: right;
+    font-size: 12px;
+    color:#00a67c;
+    font-weight:normal;
+}
+.col{
+    margin:0 10px;
+}
+.col li{
+    height: 30px;
+    line-height: 30px;
+}
+.col li span{
+    display: inline-block;
+    vertical-align: middle;
+    width:15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    background-color: #fd8c84;
+    color:#fff;
+    font-size: 12px;
+}
+.col li a{
+    display: inline-block;
+    vertical-align: middle;
+    width:783px;
+    font-size:14px;
+    color:#555;
+    margin-left:7px;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.col li em{
+    color:#00a67c;
+}
+.col li a:hover{
+    background-color: #90bba8;
+}
+.col li a:hover em{
+    font-weight: bold;
+}
+/* 最新技术文章 */
+.col01 li{float: left;width: 50%;}
+.col01 li a{width: 286px;}
+.col01 li a:hover{background: none;color:red;}
+.col01 li span{width: 19px;height: 4px;background-color: #90bba8}
+.col01 li em{font-size: 12px;}
+
+.main .right{float:right;width:360px}
+.right .column01{height:494px;background-color: #fff;margin-bottom: 10px;}
+.right .column02{width: 340px;padding:0 10px 0 10px}
+.right .column02 li a{width: 298px;}
+.right .column02 li span{width: 10px;height: 10px;background-color: #00a67c;border-radius: 50%}
+.right .column03{height:494px;background-color: #fff;margin-bottom: 10px;}
+
+/* footer*/
+.footer{width: 100%;height:400px;background-color: #555555;margin-top:10px;}

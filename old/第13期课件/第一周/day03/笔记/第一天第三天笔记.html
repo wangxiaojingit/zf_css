@@ -1,0 +1,159 @@
+<!DOCTYPE html><html><head><title>第一天第三天笔记</title><meta charset='utf-8'><link href='https://cdn.maxiang.io/res-min/themes/marxico.css' rel='stylesheet'><style></style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+<div><div class="toc"><div class="toc">
+<ul>
+<li><ul>
+<li><a href="#第一天第三天笔记">第一天第三天笔记</a><ul>
+<li><a href="#1常用的软件和工具">1.常用的软件和工具</a></li>
+<li><a href="#2常用的快捷键的梳理">2.常用的快捷键的梳理</a></li>
+<li><a href="#3html的梳理">3.HTML的梳理</a></li>
+<li><a href="#4css的梳理">4.CSS的梳理</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<h2 id="第一天第三天笔记">第一天第三天笔记</h2>
+
+<h3 id="1常用的软件和工具">1.常用的软件和工具</h3>
+
+<blockquote>
+  <p>代码编辑器: webstrom、vsCode <br>
+   浏览器:  谷歌、火狐、IE <br>
+   笔记工具: 印象笔记(markdown)，有道云笔记 <br>
+   有道词典 <br>
+   书签(阮一峰，廖雪峰，张鑫旭，掘金…)</p>
+</blockquote>
+
+<h3 id="2常用的快捷键的梳理">2.常用的快捷键的梳理</h3>
+
+<blockquote>
+  <ul><li>ctrl + C  复制</li>
+  <li>ctrl + V  粘贴</li>
+  <li>ctrl  + X 剪切</li>
+  <li>ctrl +  Z 撤销</li>
+  <li>ctrl  + D  复制整行代码</li>
+  <li>webstrom文件重命名 shift + F6</li>
+  <li>window + D 快速回到桌面</li>
+  <li>window + E 文件资源管理器(打开电脑的盘)</li>
+  <li>File =&gt; settings =&gt; Editor =&gt; General =&gt; change <br>
+  font size with ctrl + Mouse Wheel  按住ctrl + 鼠标滚轮可以随意缩放编辑器的字体大小</li>
+  <li>ctrl + / 单行注释</li>
+  <li>ctrl + shift + / 多行注释</li>
+  </ul>
+</blockquote>
+
+<h3 id="3html的梳理">3.HTML的梳理</h3>
+
+<blockquote>
+  <p><code>标签 + tab 会自动生成一组完成的标签名</code></p>
+  
+  <p><strong>完整的标签</strong> <br>
+  由开始标签和结束标签组成，而且结束标签要比开始标签多一个反斜杠</p>
+  
+  <ul><li>html 根元素标签 <code>&lt;html&gt;&lt;/html&gt;</code></li>
+  <li>head 网页头部标签 <code>&lt;head&gt;&lt;/head&gt;</code></li>
+  <li>body 网页的主体标签 <code>&lt;body&gt;&lt;/body&gt;</code></li>
+  <li>a 超链接标签  <code>&lt;a&gt;&lt;/a&gt;</code></li>
+  <li>h1-h6 标题系列标签  <code>&lt;h1&gt;&lt;/h1&gt;</code></li>
+  <li>p 文字段落标签  <code>&lt;p&gt;&lt;/p&gt;</code></li>
+  <li>em 、i  斜体标签 <code>&lt;em&gt;&lt;/em&gt; &lt;i&gt;&lt;/i&gt;</code></li>
+  <li>strong、b 加粗标签 <code>&lt;strong&gt;&lt;/strong&gt; &lt;b&gt;&lt;/b&gt;</code></li>
+  <li>small、big  文字变大变小标签  <code>&lt;small&gt;&lt;/small&gt; &lt;big&gt;&lt;/big&gt;</code></li>
+  <li>sub、sup  下标和上标 <code>&lt;sub&gt;&lt;/sub&gt; &lt;sup&gt;&lt;/sup &gt;</code> <br>
+  del 删除标签  <code>&lt;del&gt;&lt;/del&gt;</code> <br>
+  div、span 区块标签 <code>&lt;div&gt;&lt;/div&gt; &lt;span&gt;&lt;/span &gt;</code> <br>
+  iframe 嵌套网页的标签  <code>&lt;iframe&gt;&lt;/iframe&gt;</code></li>
+  <li>ul li、ol li、 dl dt dd 三大列表</li>
+  </ul>
+</blockquote>
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line">无序列表: ul&gt;li tab
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line">有序列表 ol&gt;li tab
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line">定义列表  dl&gt;dt+dd tab
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">dl</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span>
+</div><div class="hljs-line"><wbr>
+</div></code></pre>
+
+<blockquote>
+  <p><strong>单标签/自闭合标签</strong> <br>
+  只有开始标签，没有结束标签，在开始标签的地方自动闭合</p>
+  
+  <ul><li>meta  元标签: 编码，关键词，描述，视口….. <code>&lt;meta /&gt;</code></li>
+  <li>img 插入图片<code>&lt;img/&gt;</code></li>
+  <li>br  折行标签 <code>&lt;br/&gt;</code></li>
+  <li>hr  分割线标签   <code>&lt;hr/&gt;</code></li>
+  </ul>
+</blockquote>
+
+<h3 id="4css的梳理">4.CSS的梳理</h3>
+
+<blockquote>
+  <p><strong>CSS的语法</strong> <br>
+  选择器 {属性名: 属性值;属性名: 属性值;}</p>
+  
+  <p><strong>CSS的引入方式</strong> <br>
+  内嵌式： <br>
+      <code>&lt;style type="text/css"&gt; css代码块 &lt;/style&gt;</code></p>
+  
+  <p><strong>CSS的选择器</strong> </p>
+  
+  <ul><li>标签选择器：直接通过标签名获取元素  <code>div{}</code></li>
+  <li>类选择器/class选择器:  通过class类名去获取元素 <code>.box1{}</code></li>
+  <li>通配符选择器 * ：代表页面中所有的标签，一般用来清除浏览器默认自带的间距 <code>*{margin: 0;padding:0}</code></li>
+  <li>ID选择器:   通过id类名去获取元素 <code>#box1{}</code></li>
+  <li>后代选择器 : 中间用空格隔开  <code>ul  li  a img{}</code></li>
+  </ul>
+  
+  <p><strong>CSS的属性梳理</strong></p>
+  
+  <ul><li>margin: 0  外间距  margin: 上下  左右(auto水平居中)</li>
+  <li>padding: 0 内填充 </li>
+  <li>background-color 背景颜色 <br>
+  <ul>
+  <li>黑色(blank、#000)  </li>
+  <li>白色(white、#fff)</li></ul></li>
+  <li>color 字体颜色</li>
+  <li>font-size 字体大小 </li>
+  <li>width 宽度</li>
+  <li>height 高度  </li>
+  <li>line-height 行高(行高 = 高度  文字垂直居中)</li>
+  <li>text-align: center 文字水平居中</li>
+  <li>border-top/bottom/left/right:边框线的宽度    边框线的类型（solid 实线 dashed 虚线）   边框线的颜色</li>
+  <li>float:left 靠左边显示  float:right 靠右边显示</li>
+  <li>font-weight 字体粗细 bold 加粗  normal 变细</li>
+  </ul>
+  
+  <p><strong>权重：权重大的会覆盖权重小的元素</strong></p>
+  
+  <ul><li>标签选择器:  1</li>
+  <li>class选择器: 10</li>
+  <li>id选择器: 100</li>
+  <li>通配符选择器: 0-1</li>
+  <li>后代选择器:  每个单独的元素选择器的权重之和</li>
+  </ul>
+  
+  <p><strong>居中效果的实现</strong></p>
+  
+  <ul><li>文字水平居中  text-align:center</li>
+  <li>文字垂直居中 height = line-height</li>
+  <li>色块div水平  width、  marigin: 上下   auto</li>
+  </ul>
+</blockquote></div></body></html>

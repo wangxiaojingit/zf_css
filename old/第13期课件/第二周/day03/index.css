@@ -1,0 +1,18 @@
+*{margin: 0;padding: 0}
+h1{background-color: darkcyan}
+h1+h2{color:yellow}
+.div1{width: 100px;height: 100px;background-color: darkgoldenrod}
+.div2{width: 100px;height: 100px;background-color: #ff4230
+}
+#div1{background-color: #3f89ec}
+/* 后代选择器: 儿子 + 孙子后代 */
+/*.list li a{color:red}*/
+
+
+/* 子代选择器:儿子   .list 后面的li 的叫a的儿子标签*/
+.list>li>a{color:red}
+
+/* 排除/过滤选择器*/
+div:not(#div1){background-color: yellow}
+
+

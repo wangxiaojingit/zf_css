@@ -1,0 +1,87 @@
+/* 默认样式清空*/
+*{
+    margin: 0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+em{
+    font-style: normal;
+}
+
+body {
+    background-color: #dddddd;
+}
+/* 容器的高度尽量不要随便写死，写死之后不方便复用*/
+.column {
+    width: 830px;
+    background-color: #fff;
+    margin:50px auto;
+    overflow: hidden;
+}
+.title{
+    height: 45px;
+    line-height:45px;
+    border-bottom: 1px solid #00a67c;
+    margin:5px 10px 5px 10px;
+    font-size: 18px;
+    color:#555;
+}
+.title a{
+    float: right;
+    font-size: 12px;
+    color:#00a67c;
+    font-weight:normal;
+}
+.col{
+    margin:0 10px;
+}
+.col li{
+    height: 30px;
+    line-height: 30px;
+}
+.col li span{
+    display: inline-block;
+    vertical-align: middle;
+    width:15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    background-color: #fd8c84;
+    color:#fff;
+    font-size: 12px;
+}
+.col li a{
+    display: inline-block;
+    vertical-align: middle;
+    width:783px;
+    font-size:14px;
+    color:#555;
+    margin-left:7px;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.col li em{
+    color:#00a67c;
+}
+.col li a:hover{
+    background-color: #90bba8;
+}
+.col li a:hover em{
+    font-weight: bold;
+}
+/* 需要覆盖的代码添加到新的类名上 col01*/
+.col01 li{float: left;width: 50%;}
+.col01 li a{width: 286px;}
+.col01 li a:hover{background: none;color:red;}
+.col01 li span{width: 19px;height: 4px;background-color: #90bba8}
+.col01 li em{font-size: 12px;}
+
+.column01{width: 360px;padding:0 10px 0 10px}
+.column01 li a{width: 299px;}
+.column01 li span{width: 10px;height: 10px;background-color: #00a67c;border-radius: 50%}  /*border-radius:50% 圆角:正方形 = 圆形*/

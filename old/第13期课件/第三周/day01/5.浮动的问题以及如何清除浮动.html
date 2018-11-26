@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>珠峰培训</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="shortcut icon" href="" type="image/x-icon"/>
+    <link rel="icon" href="" type="image/x-icon"/>
+    <style type="text/css">
+        .main{background-color: #000;border:10px solid #d2ff2d;padding:30px;}
+        .left{float:left;width: 500px;height:500px;background-color: darkorange}
+        .right{float:left;width: 400px;height: 400px;background-color: #3ae0ff}
+        .bottom{width:400px;height: 200px;background-color: darkmagenta}
+        .clerfix:after{
+            display:block;
+            content:'';
+            clear: both;
+        }
+        .main1{border:10px solid #ff1d39}
+    </style>
+</head>
+<body>
+<div class="main clerfix">
+    <div class="left">左边</div>
+    <div class="right">右边</div>
+    <!-- 在父元素结束标签前添加一个具有块级元素的空元素，在这个空元素上添加属性为clear:both-->
+    <!--<div style="clear: both"></div>-->
+</div>
+
+<div class="main1 clerfix">
+    <div class="left">左边</div>
+    <div class="right">右边</div>
+</div>
+
+<!--<div class="bottom">下边</div>-->
+</body>
+</html>

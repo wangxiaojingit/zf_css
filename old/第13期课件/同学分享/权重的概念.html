@@ -1,0 +1,169 @@
+<!DOCTYPE html><html><head><title>1.权重的概念</title><meta charset='utf-8'><link href='https://cdn.maxiang.io/res-min/themes/marxico.css' rel='stylesheet'><style></style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+<div><div class="toc"><div class="toc">
+<ul>
+<li><ul>
+<li><ul>
+<li><a href="#1权重的概念">1.权重的概念</a></li>
+<li><a href="#2css权重的理解">2.CSS权重的理解</a></li>
+<li><a href="#3-关于权重优先级的认知">3 .关于权重优先级的认知</a></li>
+<li><a href="#4-从样式选择器看权重优先级">4. 从样式选择器看权重优先级</a><ul>
+<li><ul>
+<li><a href="#优先级规则">优先级规则</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#5-权重大小">5 .权重大小</a></li>
+<li><a href="#6优先级计算不升位">6优先级计算不升位</a></li>
+<li><a href="#7权重比较的案例">7.权重比较的案例</a></li>
+<li><a href="#8参考网址">8参考网址</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+<h3 id="1权重的概念">1.权重的概念</h3>
+
+<blockquote>
+  <p>　　权重，是一个相对的概念，是针对某一指标而言。某一指标的权重是指该指标在整体评价中的相对重要程度。</p>
+  
+  <p>　　权重系数，是表示某一指标项在指标项系统中的重要程度，它表示在其它指标项不变的情况下，这一指标项的变化，对结果的影响。</p>
+</blockquote>
+
+
+
+<h3 id="2css权重的理解">2.CSS权重的理解</h3>
+
+<blockquote>
+  <p>　　每一个css的选择器都有一个相对的重要程度值，也就是权重的值，简称“权值”；</p>
+  
+  <p>　　css通过css选择器的权重占比，来计算css选择规则的总权值，从而确定 定义样式规则的 优先级次序；</p>
+  
+  <p>css选择规则的优先级 是按照 css选择器的权值的比较 来确定的</p>
+</blockquote>
+
+
+
+<h3 id="3-关于权重优先级的认知">3 .关于权重优先级的认知</h3>
+
+<p><strong>从CSS代码存放位置看权重优先级</strong></p>
+
+<blockquote>
+  <p>内嵌样式 &gt; 内部样式表 &gt; 外联样式表 <br>
+  （括弧）这个基本忽视，因为现在大部分用外链样式表</p>
+</blockquote>
+
+<h3 id="4-从样式选择器看权重优先级">4. 从样式选择器看权重优先级</h3>
+
+<blockquote>
+  <p>important &gt; 内嵌样式(style=”“) &gt; ID &gt; 类 &gt;  伪类 | 属性选择 &gt; 伪对象 &gt; 通配符&gt; 继承 </p>
+</blockquote>
+
+<h5 id="优先级规则">优先级规则</h5>
+
+<blockquote>
+  <p>　　　1.css选择规则的权值不同时，权值高的优先；</p>
+  
+  <p>　　　2.css选择规则的权值相同时，后定义的规则优先；</p>
+  
+  <p>　　　3. css属性后面加 !important 时，无条件绝对优先；</p>
+</blockquote>
+
+<h3 id="5-权重大小">5 .权重大小</h3>
+
+<blockquote>
+  <ul><li><strong>important</strong>的权重为1000(style=”“)</li>
+  <li><strong>ID</strong>的权重为            100</li>
+  <li><strong>类（class）,属性，伪类:not</strong>的权重为            10</li>
+  <li><strong>标签（a，h1，img,p…）,伪元素选择器（::before…)</strong>的权重为1</li>
+  <li><strong>通配符</strong>的权重为0~1</li>
+  </ul>
+</blockquote>
+
+<h3 id="6优先级计算不升位">6优先级计算不升位</h3>
+
+<blockquote>
+  <p>比如一个选择器的a&gt;0，b=0即使另外一个选择器的a=0，b=12，c=12那么前者的权重依然更大！！</p>
+  
+  <p>为证明我做了一个不现实的demo</p>
+</blockquote>
+
+<pre class="prettyprint hljs-dark"><code class="hljs stylus"><div class="hljs-line">&lt;!DOCTYPE html&gt;
+</div><div class="hljs-line">&lt;html&gt;
+</div><div class="hljs-line">&lt;meta charset=<span class="hljs-string">"utf-8"</span>&gt;
+</div><div class="hljs-line">&lt;style type=<span class="hljs-string">"text/css"</span>&gt;
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line">#test{ <span class="hljs-comment">/*a=1*/</span>
+</div><div class="hljs-line">    <span class="hljs-attribute">color</span>: blue
+</div><div class="hljs-line">}
+</div><div class="hljs-line"><span class="hljs-selector-tag">div</span><span class="hljs-selector-class">.classtest</span> <span class="hljs-selector-tag">div</span><span class="hljs-selector-class">.classtest</span> <span class="hljs-selector-tag">div</span><span class="hljs-selector-class">.classtest</span> <span class="hljs-selector-tag">div</span><span class="hljs-selector-class">.classtest</span> <span class="hljs-selector-tag">div</span><span class="hljs-selector-class">.classtest</span> <span class="hljs-selector-tag">div</span><span class="hljs-selector-class">.classtest</span> <span class="hljs-selector-tag">div</span><span class="hljs-selector-class">.classtest</span> <span class="hljs-selector-tag">div</span><span class="hljs-selector-class">.classtest</span> <span class="hljs-selector-tag">div</span><span class="hljs-selector-class">.classtest</span> <span class="hljs-selector-tag">div</span><span class="hljs-selector-class">.classtest</span> <span class="hljs-selector-tag">div</span><span class="hljs-selector-class">.classtest</span> <span class="hljs-selector-tag">div</span>.classtest{ <span class="hljs-comment">/*b=12*/</span>
+</div><div class="hljs-line"><span class="hljs-attribute">color</span>:green;
+</div><div class="hljs-line">}
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line">&lt;/style&gt;
+</div><div class="hljs-line">&lt;/head&gt;
+</div><div class="hljs-line">&lt;body&gt;
+</div><div class="hljs-line">&lt;<span class="hljs-selector-tag">div</span>  class=<span class="hljs-string">"classtest"</span>&gt;
+</div><div class="hljs-line">&lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"classtest"</span>&gt;
+</div><div class="hljs-line">&lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"classtest"</span>&gt;
+</div><div class="hljs-line">&lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"classtest"</span>&gt;
+</div><div class="hljs-line">&lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"classtest"</span>&gt;
+</div><div class="hljs-line">&lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"classtest"</span>&gt;
+</div><div class="hljs-line">&lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"classtest"</span>&gt;
+</div><div class="hljs-line">&lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"classtest"</span>&gt;
+</div><div class="hljs-line">&lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"classtest"</span>&gt;
+</div><div class="hljs-line">&lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"classtest"</span>&gt;
+</div><div class="hljs-line">&lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"classtest"</span>&gt;
+</div><div class="hljs-line">&lt;<span class="hljs-selector-tag">div</span> id=<span class="hljs-string">"test"</span> class=<span class="hljs-string">"classtest"</span>&gt;
+</div><div class="hljs-line">什么颜色文章
+</div><div class="hljs-line">&lt;/div&gt;
+</div><div class="hljs-line">&lt;/div&gt;
+</div><div class="hljs-line">&lt;/div&gt;
+</div><div class="hljs-line">&lt;/div&gt;
+</div><div class="hljs-line">&lt;/div&gt;
+</div><div class="hljs-line">&lt;/div&gt;
+</div><div class="hljs-line">&lt;/div&gt;
+</div><div class="hljs-line">&lt;/div&gt;
+</div><div class="hljs-line">&lt;/div&gt;
+</div><div class="hljs-line">&lt;/div&gt;
+</div><div class="hljs-line">&lt;/div&gt;
+</div><div class="hljs-line">&lt;/div&gt;
+</div><div class="hljs-line">&lt;/body&gt;
+</div><div class="hljs-line">&lt;/html&gt;
+</div></code></pre>
+
+<h3 id="7权重比较的案例">7.权重比较的案例</h3>
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/css"</span>&gt;</span><span class="css"></span>
+</div><div class="hljs-line"><span class="css"><span class="hljs-selector-id">#left</span>{<span class="hljs-attribute">color</span>:black<span class="hljs-meta">!important</span>;}         <span class="hljs-comment">/*1,1,0,0*/</span></span>
+</div><div class="hljs-line"><span class="css"><span class="hljs-selector-id">#container</span> <span class="hljs-selector-id">#left</span>{<span class="hljs-attribute">color</span>:red;}         <span class="hljs-comment">/*0,2,0,0*/</span></span>
+</div><div class="hljs-line"><span class="css"><span class="hljs-selector-id">#left</span>{<span class="hljs-attribute">color</span>:green<span class="hljs-meta">!important</span>;}       <span class="hljs-comment">/*1,1,0,0*/</span></span>
+</div><div class="hljs-line"><span class="css"><span class="hljs-selector-class">.container</span> <span class="hljs-selector-id">#left</span>{<span class="hljs-attribute">color</span>:blue;}      <span class="hljs-comment">/*0,1,1,0*/</span></span>
+</div><div class="hljs-line"><span class="css"></span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"container"</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"left"</span>&gt;</span>这到底是什么颜色啊？我也不知道别看我<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</div></code></pre>
+
+<h3 id="8参考网址">8参考网址</h3>
+
+<blockquote>
+  <p><a href="https://www.cnblogs.com/cnblogs-jcy/p/8574177.html" target="_blank">https://www.cnblogs.com/cnblogs-jcy/p/8574177.html</a> <br>
+  <a href="https://www.cnblogs.com/starof/p/4387525.html" target="_blank">https://www.cnblogs.com/starof/p/4387525.html</a></p>
+</blockquote></div></body></html>
