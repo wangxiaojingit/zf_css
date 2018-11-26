@@ -1,0 +1,27 @@
+*{
+    margin:0;padding:0;
+}
+
+ul,li,ol{list-style: none;}
+.homemain{
+    width:1226px;
+    margin:0 auto;
+}
+.homemain hd{
+    height:58px;
+    line-height: 58px;
+}
+.homemain h3{
+    font-size:22px;
+}
+.homemain bd{
+
+}
+.bd_left{
+    width:234px;
+    height:614px;
+}
+.bd_right{
+    width:992px;
+
+}

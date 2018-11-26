@@ -31,6 +31,22 @@ ul,ol,li{
     padding-bottom:40px;
 
 }
+.main ul li{position:relative;overflow:hidden;}
+.main ul li .bottom{
+    height: 30px;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background: pink;
+    z-index: 4;
+    width: 100%;
+    transition:all .3s linear;
+
+}
+.main ul li:hover .bottom{
+    bottom:0px;
+}
+
 h2{
     height:58px;
     line-height: 58px;

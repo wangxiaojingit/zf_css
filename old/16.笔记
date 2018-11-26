@@ -1,0 +1,23 @@
+【字体类 Font】
+font-style
+font-variant
+font-weight
+font-size
+font-family
+
+font 复合样式(缩写)
+font-style | font-weight | font-size | line-height | font-family
+
+【文本类 Text】
+text-transform
+white-space:nowrap
+text-align
+word-spacing（英文单词） /  letter-spacing(中文字符)
+line-height
+text-indent   -9999em
+vertical-align
+
+
+
+
+
